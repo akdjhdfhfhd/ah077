@@ -9,17 +9,17 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="اضف البوت لمجموعتڪ ✅",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ",
+                text="༺༽الاوامر༼༻",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
+                text="☆ الاعدادات ☆", callback_data="settings_helper"
             ),
         ],
      ]
@@ -30,24 +30,21 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="•ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ•",
+                text="اضف البوت لمجموعتڪ ✅",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="🍂ᴄᴏᴍᴍᴀɴᴅs🍂", callback_data="settings_back_helper"
+                text="لتنصيب البوت 🤖", callback_data="https://t.me/ah05v"
             ),
             InlineKeyboardButton(
-                text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", user_id=OWNER
+                text="المطور 👨‍💻", user_id=OWNER
             )
         ],
         [
             InlineKeyboardButton(
-                text="💔sᴜᴩᴩᴏʀᴛ💔", url=config.SUPPORT_GROUP
-            ),
-            InlineKeyboardButton(
-                text="✨ sᴏᴜʀᴄᴇ ✨", url=f"https://github.com/akdjhdfhfhd/ah077"
+                text="قناة البوت ⚙️", url=config.SUPPORT_GROUP
             )
         ],
      ]
