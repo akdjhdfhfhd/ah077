@@ -43,7 +43,7 @@ async def start_comm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("https://telegra.ph/%F0%9D%91%8C%F0%9D%91%82-%E2%84%8D%F0%9D%97%BA%F0%9D%97%B1-%F0%9D%9F%AC%F0%9D%9F%B3%F0%9D%9F%AD%F0%9D%9F%B2-03-12")
+            await message.reply_sticker("")
             return await message.reply_photo(
                        photo=config.START_IMG_URL,
                        caption=_["help_1"], reply_markup=keyboard
@@ -202,7 +202,7 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
-                await message.reply_sticker("https://telegra.ph/%F0%9D%91%8C%F0%9D%91%82-%E2%84%8D%F0%9D%97%BA%F0%9D%97%B1-%F0%9D%9F%AC%F0%9D%9F%B3%F0%9D%9F%AD%F0%9D%9F%B2-03-12")
+                await message.reply_sticker("")
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
