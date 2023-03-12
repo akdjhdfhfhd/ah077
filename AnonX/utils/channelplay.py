@@ -3,7 +3,7 @@ from AnonX.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
-    if command == "":
+    if command == "c":
         chat_id = await get_cmode(CallbackQuery.message.chat.id)
         if chat_id is None:
             try:
